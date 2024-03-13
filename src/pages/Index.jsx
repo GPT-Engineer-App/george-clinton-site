@@ -1,4 +1,5 @@
 import { Box, Container, Heading, Text, VStack, Image, Link, IconButton, HStack, Divider, useColorMode, useColorModeValue, Button } from "@chakra-ui/react";
+import NavComponent from "../components/NavComponent";
 import { FaTwitter, FaLinkedin, FaEnvelope, FaSun, FaMoon } from "react-icons/fa";
 
 const Index = () => {
@@ -8,6 +9,7 @@ const Index = () => {
   return (
     <Container maxW="container.md" py={10}>
       <VStack spacing={4} as="header" textAlign="center">
+        <NavComponent />
         <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1518105570919-e342af1a8275?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxHZW9yZ2UlMjBDbGludG9ufGVufDB8fHx8MTcxMDMyNjc4M3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="George Clinton" />
         <Heading as="h1" size="xl">
           George Clinton
